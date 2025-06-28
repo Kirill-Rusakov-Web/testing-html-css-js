@@ -1,0 +1,22 @@
+//base
+@import './base/reset';
+@import './base/fonts';
+@import './base/vars';
+@import './base/base';
+
+//sections
+@import './sections/header';
+@import './sections/banner';
+@import './sections/main';
+@import './sections/footer';
+
+//components
+@import './components/logo';
+@import './components/nav';
+@import './components/hidden-menu-button';
+@import './components/titles';
+@import './components/buttons';
+@import './components/step';
+@import './components/circles';
+@import './components/form';
+@import './components/links';

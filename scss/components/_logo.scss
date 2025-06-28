@@ -1,0 +1,16 @@
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.46vw;
+    font-weight: 800;
+    color: $white-color;
+    text-transform: uppercase;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 1rem;
+    }
+
+    span {
+        color: $accent-color-first;
+    }
+}

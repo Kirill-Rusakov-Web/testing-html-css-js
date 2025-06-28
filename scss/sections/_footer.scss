@@ -1,0 +1,33 @@
+.footer {
+    padding: 1.56vw 0;
+
+    background-color: $footer-color-second;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding: 3.2vw 0;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        color: $white-color;
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+
+    &__copyright {
+        font-size: 0.68vw;
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            font-size: 1.3vw;
+        }
+    }
+}

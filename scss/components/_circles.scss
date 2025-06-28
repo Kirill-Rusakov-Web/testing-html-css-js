@@ -1,0 +1,43 @@
+.circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.77vw;
+
+    width: 100%;
+
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: translateY(-50%);
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        gap: 11vw;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        gap: 1.04vw;
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            gap: 1.5vw;
+        }
+    }
+
+    &__element {
+        width: 0.31vw;
+        height: 0.31vw;
+
+        border-radius: 50%;
+        background-color: $grey-color-fouth;
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            width: 0.45vw;
+            height: 0.45vw;
+        }
+    }
+}

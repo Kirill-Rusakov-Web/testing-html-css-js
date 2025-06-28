@@ -1,0 +1,19 @@
+.header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1.72vw 0;
+
+    background-color: rgba($header-color, .9);
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding: .5rem 0;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

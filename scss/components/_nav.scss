@@ -1,0 +1,23 @@
+.nav {
+
+    /* Tablet */
+    @media (max-width: 599px) {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 3.13vw;
+
+        font-size: 0.68vw;
+        font-weight: 600;
+        color: $white-color;
+        text-transform: uppercase;
+
+    }
+
+    &__item:hover {
+        color: $accent-color-fouth
+    }
+}

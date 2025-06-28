@@ -1,0 +1,31 @@
+.button {
+    width: 9.53vw;
+    padding: 0.78vw 0;
+
+    border: 0.05vw solid $white-color;
+    border-radius: 0.21vw;
+    background-color: $accent-color-second;
+
+    font-size: 0.68vw;
+    color: $white-color;
+    text-transform: uppercase;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: auto;
+        padding: .5rem 1rem;
+        
+        font-size: .6rem;
+    }
+
+    &--light {
+        border-color: $grey-color;
+        background-color: $white-color;
+
+        color: $grey-color-second;
+    }
+
+    &:hover{
+        opacity: .8;
+    }
+}

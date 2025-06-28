@@ -1,0 +1,30 @@
+.title-1 {
+    font-size: 2.50vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 1.1rem;
+    }
+
+    span {
+        color: $accent-color-second;
+    }
+}
+
+.title-2 {
+    font-size: 1.88vw;
+    font-weight: 800;
+    color: $white-color;
+    text-transform: uppercase;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 0.9rem;
+    }
+
+    span {
+        color: $accent-color-second;
+    }
+}

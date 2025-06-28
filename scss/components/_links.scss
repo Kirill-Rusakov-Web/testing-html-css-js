@@ -1,0 +1,71 @@
+.links {
+    display: flex;
+    align-items: center;
+    gap: 3.54vw;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        gap: 7.2vw;
+    }
+
+    &--pay {
+        color: $grey-color-fifth;
+    }
+
+    &__item {
+        position: relative;
+
+        font-size: 0.68vw;
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            font-size: 1.3vw;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -1.56vw;
+            transform: translateY(-50%);
+
+            width: 1.04vw;
+            height: 1.04vw;
+
+            background: url('./../img/icons/qiwi.svg') center / cover no-repeat;
+
+            /* Mobile XS */
+            @media (max-width: 599px) {
+                left: -3.2vw;
+
+                width: 2.2vw;
+                height: 2.2vw;
+            }
+        }
+
+        &:nth-child(2)::before {
+            background-image: url('./../img/icons/yandex.svg');
+        }
+
+        &:nth-child(3)::before {
+            background-image: url('./../img/icons/web.svg');
+        }
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    &--contacts {
+        
+        .links__item {
+            &:nth-child(1)::before {
+                background-image: url('./../img/icons/mail.svg');
+            }
+
+            &:nth-child(2)::before {
+                background-image: url('./../img/icons/vk.svg');
+            }
+        }
+    }
+}

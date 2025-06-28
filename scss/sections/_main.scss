@@ -1,0 +1,39 @@
+.main {
+    padding: 6.25vw 0 7.81vw;
+
+    background-color: $main-color;
+    background-image: url('./../img/main-img/main-bg.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4.17vw;
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            gap: 2rem;
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-top: 1.56vw;
+
+        font-size: 0.94vw;
+        color: $grey-color-third;
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            margin-top: 1rem;
+
+            font-size: 0.5rem;
+        }
+    }
+}
